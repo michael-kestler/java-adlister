@@ -1,16 +1,17 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 
 <html>
 <head>
-<%--    <jsp:include page="partials/head.jsp">--%>
+<%--    <jsp:include page="orderform/head.jsp">--%>
 <%--        <jsp:param name="title" value="Please Log In" />--%>
 <%--    </jsp:include>--%>
 </head>
 <body>
 <div class="container">
     <h1>How would you like your pizza?</h1>
-    <form action="/login.jsp" method="POST">
+    <form action="../pizzaservlet" method="POST">
         <div class = "form-group">
             <label for="sauce">Choose sauce:</label>
             <select name="sauce" id="sauce">
