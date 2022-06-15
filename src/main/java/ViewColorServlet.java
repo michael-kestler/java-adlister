@@ -5,12 +5,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "PickColor", value = "/pcolor")
-public class PickColorServlet extends HttpServlet {
+@WebServlet(name = "ViewColor", value = "/vcolor")
+public class ViewColorServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        request.getRequestDispatcher("/pickcolor.jsp").forward(request, response);
+        request.getRequestDispatcher("/viewcolor.jsp").forward(request, response);
 
     }
 
