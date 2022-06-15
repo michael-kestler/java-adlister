@@ -11,7 +11,7 @@
 <body>
 <div class="container">
     <h1>How would you like your pizza?</h1>
-    <form action="../pizzaservlet" method="POST">
+    <form action="pizzaservlet" method="POST">
         <div class = "form-group">
             <label for="sauce">Choose sauce:</label>
             <select name="sauce" id="sauce">
@@ -21,6 +21,7 @@
                 <option value="audi">Extra Sauce</option>
             </select>
         </div>
+    </form>
 
         <div class = "form-group">
             <label for="crust">Choose crust:</label>
@@ -49,9 +50,10 @@
             </div>
 
         <br>
+    <form action="pizzaservlet" method="POST">
         <div class="form-group">
             <label for="delivery address">Delivery Address</label>
-            <input id="delivery address" name="address" class="form-control" type="address">
+            <input id="delivery address" name="address" class="form-control" type="text">
         </div>
         <input type="submit" class="btn btn-primary btn-block" value="Submit">
     </form>
