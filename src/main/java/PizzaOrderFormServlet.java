@@ -12,7 +12,7 @@ public class PizzaOrderFormServlet extends HttpServlet {
 
         //Step 0: Add data
 //        String address = request.getParameter("delivery address");
-////        request.setAttribute("address", address);
+//        request.setAttribute("address", address);
 //        System.out.println("Your delivery address is " + address);
 
         //Step 1: get request dispatcher

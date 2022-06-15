@@ -10,17 +10,18 @@
 <h1>Color Picker</h1>
 
 
-<button onclick="pickColor()">Click to Enter Favorite Color</button>
-
+<div class="form-group">
+    <label for="pick color">Pick Color</label>
+    <input id="pick color" name="pickcolor" class="form-control" type="text">
+</div>
+<br>
+<input type="submit" class="btn btn-primary btn-block" value="Submit">
+</form>
 
 
 <script>
 
-    function pickColor() {
-        return prompt("What is your favorite color?");
-    }
 
-    // let favColor = prompt("Please enter your favorite color");
 
 
 </script>
