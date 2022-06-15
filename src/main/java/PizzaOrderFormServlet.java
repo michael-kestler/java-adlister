@@ -26,7 +26,7 @@ public class PizzaOrderFormServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // read form fields
         String sauce = request.getParameter("sauce");
-        System.out.println("Sauce is: " + sauce);
+        System.out.println("Sauce is  git add : " + sauce);
 
         PrintWriter writer1 = response.getWriter();
 
