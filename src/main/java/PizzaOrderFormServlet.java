@@ -25,6 +25,19 @@ public class PizzaOrderFormServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // read form fields
+        String sauce = request.getParameter("sauce");
+        System.out.println("Sauce is: " + sauce);
+
+        PrintWriter writer1 = response.getWriter();
+
+        String htmlResponse = "<html>";
+        htmlResponse += "<h2>Your sauce selection is " + sauce + "<br/>";
+        htmlResponse += "</html>";
+
+        writer1.println(htmlResponse);
+
+
+
         String address = request.getParameter("address");
 
 
@@ -37,12 +50,20 @@ public class PizzaOrderFormServlet extends HttpServlet {
         PrintWriter writer = response.getWriter();
 
         // build HTML code
-        String htmlResponse = "<html>";
-        htmlResponse += "<h2>Your delivery address is: " + address + "<br/>";
-        htmlResponse += "</html>";
+        String htmlsauceResponse = "<html>";
+        htmlsauceResponse += "<h2>Your delivery address is: " + address + "<br/>";
+        htmlsauceResponse += "</html>";
 
         // return response
-        writer.println(htmlResponse);
+        writer.println(htmlsauceResponse);
+
+
+
+
+
+
+
+
 
     }
 }

@@ -21,7 +21,7 @@
                 <option value="audi">Extra Sauce</option>
             </select>
         </div>
-    </form>
+
 
         <div class = "form-group">
             <label for="crust">Choose crust:</label>
@@ -46,11 +46,12 @@
                 <input type="checkbox" id="toppings5" name="toppings5" value="Onion">
                 <label for="toppings5"> Onion</label><br>
             </div>
-                 <button type="submit" class="btn btn-default">Submit</button>
+<%--                 <button type="submit" class="btn btn-default">Submit</button>--%>
             </div>
+<%--    </form>--%>
 
         <br>
-    <form action="pizzaservlet" method="POST">
+<%--    <form action="pizzaservlet" method="POST">--%>
         <div class="form-group">
             <label for="delivery address">Delivery Address</label>
             <input id="delivery address" name="address" class="form-control" type="text">
