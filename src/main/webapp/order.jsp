@@ -35,15 +35,15 @@
         <br>
         <div class="form-group">Choose Toppings:
             <div class="checkbox">
-                <input type="checkbox" id="toppings1" name="toppings1" value="Pepperoni">
+                <input type="checkbox" id="toppings1" name="toppings" value="Pepperoni">
                 <label for="toppings1"> Pepperoni</label><br>
-                <input type="checkbox" id="toppings2" name="toppings2" value="Sausage">
+                <input type="checkbox" id="toppings2" name="toppings" value="Sausage">
                 <label for="toppings2"> Sausage</label><br>
-                <input type="checkbox" id="toppings3" name="toppings3" value="Jalapeno">
+                <input type="checkbox" id="toppings3" name="toppings" value="Jalapeno">
                 <label for="toppings3"> Jalapeno</label><br>
-                <input type="checkbox" id="toppings4" name="toppings4" value="Green Pepper">
+                <input type="checkbox" id="toppings4" name="toppings" value="Green Pepper">
                 <label for="toppings4"> Green Pepper</label><br>
-                <input type="checkbox" id="toppings5" name="toppings5" value="Onion">
+                <input type="checkbox" id="toppings5" name="toppings" value="Onion">
                 <label for="toppings5"> Onion</label><br>
             </div>
 <%--                 <button type="submit" class="btn btn-default">Submit</button>--%>
@@ -56,6 +56,7 @@
             <label for="delivery address">Delivery Address</label>
             <input id="delivery address" name="address" class="form-control" type="text">
         </div>
+        <br>
         <input type="submit" class="btn btn-primary btn-block" value="Submit">
     </form>
 </div>

@@ -30,11 +30,45 @@ public class PizzaOrderFormServlet extends HttpServlet {
 
         PrintWriter writer1 = response.getWriter();
 
-        String htmlResponse = "<html>";
-        htmlResponse += "<h2>Your sauce selection is " + sauce + "<br/>";
-        htmlResponse += "</html>";
+        String sauceResponse = "<html>";
+        sauceResponse += "<h2>Your order is as follows... <br/>";
+        sauceResponse += "Sauce: " + sauce + "<br/>";
+        sauceResponse += "</html>";
 
-        writer1.println(htmlResponse);
+        writer1.println(sauceResponse);
+
+        String crust = request.getParameter("crust");
+        System.out.println("Crust: " + crust);
+
+        PrintWriter writer2 = response.getWriter();
+
+        String crustResponse = "<html>";
+        crustResponse += "Crust: " + crust + "<br/>";
+        crustResponse += "</html>";
+
+        writer2.println(crustResponse);
+
+        String toppings[] = request.getParameterValues("toppings");
+
+        if (toppings != null) {
+            System.out.println("Toppings are: ");
+            for (String topping : toppings) {
+                System.out.println("\t" + topping);
+
+                PrintWriter writer3 = response.getWriter();
+
+                String toppingResponse = "<html>";
+                toppingResponse += "Toppings: " + topping + "<br/>";
+                toppingResponse += "</html>";
+
+                writer3.println(toppingResponse);
+            }
+
+        }
+
+
+
+
 
 
 
@@ -50,12 +84,12 @@ public class PizzaOrderFormServlet extends HttpServlet {
         PrintWriter writer = response.getWriter();
 
         // build HTML code
-        String htmlsauceResponse = "<html>";
-        htmlsauceResponse += "<h2>Your delivery address is: " + address + "<br/>";
-        htmlsauceResponse += "</html>";
+        String htmlResponse = "<html>";
+        htmlResponse += "Delivery address: " + address + "<br/>";
+        htmlResponse += "</html>";
 
         // return response
-        writer.println(htmlsauceResponse);
+        writer.println(htmlResponse);
 
 
 
