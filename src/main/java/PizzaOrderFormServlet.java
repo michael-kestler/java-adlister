@@ -10,10 +10,8 @@ public class PizzaOrderFormServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        //Step 0: Add data
-//        String address = request.getParameter("delivery address");
-////        request.setAttribute("address", address);
-//        System.out.println("Your delivery address is " + address);
+
+
 
         //Step 1: get request dispatcher
         request.getRequestDispatcher("/order.jsp").forward(request, response);

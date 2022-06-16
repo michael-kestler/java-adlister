@@ -10,7 +10,7 @@
 <h1>Color Picker</h1>
 
 
-<form action="pickcolorservlet" method="GET">
+<form action="/pick-color" method="POST">
     <div class="form-group">
         <label for="pick color">What's your favorite color?</label>
         <input id="pick color" name="pickcolor" class="form-control" type="text">

@@ -6,13 +6,13 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "ViewColor", value = "/view-color")
-public class ViewColorServlet extends HttpServlet {
+@WebServlet(name = "Correct", urlPatterns = "correct")
+public class CorrectServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String pickcolor = request.getParameter("pickcolor");
-        request.setAttribute("pickcolor", pickcolor);
-        request.getRequestDispatcher("/viewcolor.jsp").forward(request, response);
+        String guess = request.getParameter("guess");
+        request.setAttribute("guess", guess);
+        request.getRequestDispatcher("/guess-outcome.jsp").forward(request, response);
     }
 
 
