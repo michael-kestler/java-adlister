@@ -18,13 +18,7 @@ public class GuessServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String number = request.getParameter("number");
 
-        if (number != "2") {
-
-            response.sendRedirect("/incorrect");
-        } else
-
-            response.sendRedirect("/correct");
-
+         response.sendRedirect("incorrect?number=" + number);
     }
 }
 
