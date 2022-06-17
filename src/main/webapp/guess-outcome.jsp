@@ -10,7 +10,7 @@
 <head>
     <title>Guess Outcome</title>
 
-    You guessed ${guess}
+    You guessed ${number}
 
 
 </head>

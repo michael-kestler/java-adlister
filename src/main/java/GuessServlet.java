@@ -14,17 +14,17 @@ public class GuessServlet extends HttpServlet {
         request.getRequestDispatcher("/guess.jsp").forward(request, response);
 
     }
-//    @Override
-//    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
-//        String guess = request.getParameter("guess");
-//
-//        if (guess != "2") {
-//
-//            response.sendRedirect("/incorrect");
-//        } else
-//
-//            response.sendRedirect("/correct");
-//
-//    }
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        String number = request.getParameter("number");
+
+        if (number != "2") {
+
+            response.sendRedirect("/incorrect");
+        } else
+
+            response.sendRedirect("/correct");
+
+    }
 }
 

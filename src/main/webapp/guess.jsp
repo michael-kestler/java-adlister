@@ -13,8 +13,8 @@
 <body>
 <form action="/guess" method="POST">
   <div class="form-group">
-    <label for="guess">Guess a number between 1 and 3</label>
-    <input id="guess" name="guess" class="form-control" type="text">
+    <label for="number">Guess a number between 1 and 3</label>
+    <input id="number" name="number" class="form-control" type="text">
   </div>
   <br>
   <input type="submit" class="btn btn-primary btn-block" value="Submit">
