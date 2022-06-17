@@ -1,4 +1,5 @@
-<%--@elvariable id="number" type="IncorrectServlet"--%>
+<%--@elvariable id="result" type=""--%>
+
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <%--
@@ -13,7 +14,7 @@
 <head>
     <title>Guess Outcome</title>
 
-    You guessed ${number}
+     ${result}
 
 
 </head>
