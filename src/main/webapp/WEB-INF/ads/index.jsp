@@ -18,7 +18,7 @@
                <c:out value = "${ad.title}" />
             </h2>
             <p>
-                 <c:out value =" ${ad.description} "  />
+                 <c:out value = "${ad.description}"  />
             </p>
         </div>
     </c:forEach>
